@@ -25,3 +25,15 @@ class TruckFareCalculator(FareCalculator):
         base_fare = base_fair[SpotType.LARGE]
         hourly_rate = 3.0
         return base_fare + (hourly_rate * hours)
+    
+class FareCalculatorFactory:
+    @staticmethod
+    def get_fare_calculator(spot_type: SpotType) -> FareCalculator:
+        if spot_type == SpotType.SMALL:
+            return MotorcycleFareCalculator()
+        elif spot_type == SpotType.MEDIUM:
+            return CarFareCalculator()
+        elif spot_type == SpotType.LARGE:
+            return TruckFareCalculator()
+        else:
+            raise ValueError("Invalid spot type")
