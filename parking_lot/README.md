@@ -57,4 +57,4 @@ The `main.py` file includes a sample driver:
 - Add REST API interface (Flask/FastAPI)
 
 ## UML Daigram
-![Parking Lot Demo](parking_lot/assets/parking_lot.png)
+![Parking Lot Demo](assets/parking_lot.png)
