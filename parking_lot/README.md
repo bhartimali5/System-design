@@ -56,6 +56,5 @@ The `main.py` file includes a sample driver:
 - Integrate database persistence
 - Add REST API interface (Flask/FastAPI)
 
-## 📜 License
-
-MIT License (or your own preferred license)
+## UML Daigram
+![Parking Lot Demo](parking_lot/assets/parking_lot.png)
